@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.asm_linksys.actionbardemo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_swapno"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        <activity android:name=".ActionBarWithLeftTopMenu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActionBarWithNavigationDrawer"
+            android:label="@string/title_activity_action_bar_with_navigation_drawer"
+            android:parentActivityName=".ActionBarWithLeftTopMenu"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.asm_linksys.actionbardemo.ActionBarWithLeftTopMenu" />
+        </activity>
+    </application>
+
+</manifest>
